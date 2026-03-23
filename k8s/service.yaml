@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-service
+spec:
+  type: ClusterIP
+  ports:
+  - targetPort: 8000 #port w kontenerze
+    port: 80 #port serwisu
+    protocol: TCP
+  selector:
+    app: task-manager

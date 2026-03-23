@@ -1,0 +1,14 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Python caches
+__pycache__/
+*.pyc
+
+# Ignore Docker local stuff (build cache, volumes, etc.)
+docker-compose.override.yml
+*.env
+
+# Ignore Kubernetes local config
+.kube/
