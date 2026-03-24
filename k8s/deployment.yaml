@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: taskmanager:latest
-          imagePullPolicy: IfNotPresent
+          image: panutka/taskmanager:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
